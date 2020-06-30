@@ -1,0 +1,22 @@
+{
+  "name": "grids_gauge_chart",
+  "version": "1.0.0",
+  "description": "Gauge chart visualization for Splunk",
+  "main": "visualization.js",
+  "scripts": {
+    "build": "$SPLUNK_HOME/bin/splunk cmd node ./node_modules/webpack/bin/webpack.js",
+    "devbuild": "$SPLUNK_HOME/bin/splunk cmd node ./node_modules/webpack/bin/webpack.js --progress",
+    "watch": "$SPLUNK_HOME/bin/splunk cmd node ./node_modules/webpack/bin/webpack.js -d --watch --progress"
+  },
+  "author": "Darl Jed Matundan",
+  "license": "",
+  "devDependencies": {
+    "webpack": "^1.12.6"
+  },
+  "dependencies": {
+    "billboard.js": "^1.12.0-next.5",
+    "d3": "^3.5.17",
+    "jquery": "^2.2.0",
+    "underscore": "^1.8.3"
+  }
+}

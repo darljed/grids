@@ -1,0 +1,57 @@
+
+<form class="splunk-formatter-section" section-label="Axis">
+    <splunk-control-group label="X Axis Label">
+        <splunk-text-input name="{{VIZ_NAMESPACE}}.xlabel" value="">
+        </splunk-text-input>
+    </splunk-control-group>
+    <splunk-control-group label="X Axis Position">
+        <splunk-radio-input name="{{VIZ_NAMESPACE}}.xlabel-position" value="outer-center">
+            <option value="outer-left">O-L</option>
+            <option value="outer-center">O-C</option>
+            <option value="outer-right">O-R</option>
+            <option value="inner-left">I-L</option>
+            <option value="inner-center">I-C</option>
+            <option value="inner-right">I-R</option>
+        </splunk-radio-input>
+    </splunk-control-group>
+    <splunk-control-group label="X Axis Grid">
+        <splunk-radio-input name="{{VIZ_NAMESPACE}}.xGrid" value="false">
+            <option value="true">YES</option>
+            <option value="false">NO</option>
+        </splunk-radio-input>
+    </splunk-control-group>
+    <splunk-control-group label="Y Axis Label">
+        <splunk-text-input name="{{VIZ_NAMESPACE}}.ylabel" value="">
+        </splunk-text-input>
+    </splunk-control-group>
+    <splunk-control-group label="Y Axis Position">
+        <splunk-radio-input name="{{VIZ_NAMESPACE}}.ylabel-position" value="outer-middle">
+            <option value="outer-top">O-T</option>
+            <option value="outer-middle">O-C</option>
+            <option value="outer-bottom">O-B</option>
+            <option value="inner-top">I-T</option>
+            <option value="inner-middle">I-C</option>
+            <option value="inner-bottom">I-B</option>
+        </splunk-radio-input>
+    </splunk-control-group>
+    <splunk-control-group label="Y Axis Grid">
+        <splunk-radio-input name="{{VIZ_NAMESPACE}}.yGrid" value="false">
+            <option value="true">YES</option>
+            <option value="false">NO</option>
+        </splunk-radio-input>
+    </splunk-control-group>
+    <splunk-control-group label="Axis Rotation">
+        <splunk-radio-input name="{{VIZ_NAMESPACE}}.axisRotation" value="false">
+            <option value="true">YES</option>
+            <option value="false">NO</option>
+        </splunk-radio-input>
+    </splunk-control-group>
+</form>
+<form class="splunk-formatter-section" section-label="Tooltip">
+    <splunk-control-group label="Show Tooltip">
+        <splunk-radio-input name="{{VIZ_NAMESPACE}}.showTooltip" value="true">
+            <option value="true">YES</option>
+            <option value="false">NO</option>
+        </splunk-radio-input>
+    </splunk-control-group>
+</form>
